@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --primary: #ffba0a;
+  --primary-light: #ffde89;
+  --primary-x-light: #fae6b3;
+  --primary-dark: #e6a500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 80%;
+}
+
+body {
+  font-size: 3.3vh;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.box {
+  height: 70%;
+  width: 50%;
+  background: linear-gradient(rgb(22, 96, 225), rgb(90, 219, 228));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 3%;
+  box-shadow: 0 0 30px rgba(0, 1, 0, 0.75);
+}
+.upper {
+  flex-grow: 10;
+  padding: 4rem 4rem;
+}
+.upper h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#password {
+  width: 100%;
+  border-radius: 2rem;
+  height: 4rem;
+  background-color: var(--primary-x-light);
+  margin-bottom: 2rem;
+  color: red;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: copy;
+}
+.range_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.checkboxes {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.form_control {
+  display: flex;
+  justify-content: space-between;
+}
+.form_control label {
+  font-size: 22px;
+  letter-spacing: 0.4px;
+}
+
+/* For all Range Slider */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  height: 0.5rem;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 2rem;
+  width: 1rem;
+  background-color: red;
+  border: 1px solid black;
+}
+
+
+
+#genBtn {
+  background: rgb(255, 234, 0);
+  border: none;
+  border-radius: 5rem;
+  font-size: 30px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 27%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+}
+
+#genBtn:active {
+  background: var(--primary-dark);
+  color: black;
+  transition: 0.2s ease-in-out;
+  cursor: crosshair;
+}
+
+@media (max-width: 425px) {
+  .box {
+    width: 100%;
+    height: 100vh;
+  }
+  .genBtn{
+    margin-top: 50%;
+
+  }
+}
