@@ -1,7 +1,4 @@
-/* author: https://codepen.io/jcoulterdesign/pen/ZxXbeP
-Jamie Coulter
- */
-
+/*-------------------------------------------------WELCOME TO CSS----------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 .solar_systm {
   transform-style: preserve-3d;
@@ -13,14 +10,11 @@ Jamie Coulter
 }
 
 * {
-  -webkit-user-select: none;
-  /* Chrome all / Safari all */
+  -webkit-user-select: none;/*ALL CROME / SAFARI ALL*/
   -moz-user-select: none;
-  /* Firefox all */
   -ms-user-select: none;
-  /* IE 10+ */
   user-select: none;
-  /* Likely future */
+
 }
 
 body .solar_systm .planet, body input[type=radio][name=planet]::after, body .overlay {
@@ -2270,3 +2264,4 @@ body .panel p {
   font-size: 12px;
   line-height: 20px;
 }
+/*---------------------------------------------------------------------------------PATILYASH007-------------------------------------------------------------------------------------------*/
