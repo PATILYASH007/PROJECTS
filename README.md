@@ -19,4 +19,5 @@
 <h3>About:</h3>
 <p>...............</p>
 <h3>Live website: https://solar-system-website-by-yash.glitch.me</h3>
+<h3> special Thanks</h3>
 Continue.....................
