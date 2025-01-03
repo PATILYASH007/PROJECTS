@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "FX_LED";
+    src: url("fonts/FX_LED.ttf");
+}
+
+@font-face {
+    font-family: "Hack";
+    src: url("fonts/Hack-Bold.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    font-size: 30px;
+}
+
+.Digi-Clock {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    user-select: none;
+    padding: 2rem;
+    border: 0.5rem solid #221c1c;
+    font-family: "FX_LED", sans-serif;
+    width: 80%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.week {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #221c1c;
+    font-weight: bold;
+    font-family: "Hack", monospace;
+    margin-bottom: 1.5rem;
+}
+
+.week div {
+    width: 3rem;
+    text-align: center;
+}
+
+.week .active {
+    color: white;
+}
+
+.Timer {
+    font-family: "FX_LED", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hour,
+.Dot,
+.Min {
+    display: inline-block;
+    font-size: 10vw;
+    line-height: 1;
+}
+
+.Dot {
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    .Digi-Clock {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .Hour,
+    .Dot,
+    .Min {
+        font-size: 14vw;
+    }
+
+    .week div {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Digi-Clock {
+        padding: 3rem;
+        border-radius: 3rem;
+    }
+
+    .Hour,
+    .Dot,
+    .Min {
+        font-size: 8rem;
+    }
+}
